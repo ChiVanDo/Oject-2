@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css_cart.css">
+    <script src="cart_javascript.js"></script>
+    <script src="https://kit.fontawesome.com/9d63442f20.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .item1{
+            padding: auto;
+            margin: auto;
+        }
+        .data_khach_hang{
+            width: 100%;
+            background-color: rgb(233, 233, 233);
+            margin: auto;
+            padding: 50px;
+            text-align: center;
+        }
+        .data_khach_hang button{
+            padding: 10px;
+            background-color: rgb(226, 38, 9);
+            margin-top: 30px;
+            margin-left: 30px;
+            text-align: center;
+        }
+        .data_khach_hang button:hover{
+            background-color: rgb(255, 119, 0);  
+        }
+        .data_khach_hang h3{
+            color: black;
+
+        }
+        
+        .data_kh_lv2 a{
+          color: black;
+        }
+        .table_lv1 th{
+            padding: 5px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+        .table td{
+            text-align: left;
+        }
+        .table-lv1{
+            width: 50%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .mot_sp button{
+            margin: 5px;
+            background-color: rgb(255, 119, 0);
+            
+        }
+        .mot_sp button:hover{
+            background-color: rgb(228, 137, 40);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="dieu_huong">
+        <ul>
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="index.html">THÔNG BÁO</a></li>
+            <div class="ic_fb">
+                <li><a href="facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            </div>
+            <div class="ic_ig">
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </div>
+            
+       </ul>
+    </div>
+    <div class="top_lv1">
+        <p>CHEESE | ĐƠN HÀNG</p>
+    </div>
+
+    <div class="cot_rohang">
+        <ul>
+            <li><p>Danh sách đơn hàng</p></li>
+            <li><p style="margin-right:500px; color:rgb(199, 199, 199); ">.</p></li>
+            <li><p>Thao Tác</p></li>   
+       </ul>
+    </div>
+
+    <div class="sp_lv1">
+        <div id="san_pham_lv1" style="display: block;">
+            <!-- <div class="nhieu_sp">
+                <div class="data_khach_hang">
+                    <div class="table-lv1">
+                        <h3>Thông tin khách hàng</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">TÊN KHÁCH HÀNG</th>
+                                    <th scope="col">ĐỊA CHỈ KHÁCH HÀNG</th>
+                                    <th scope="col">SỐ ĐIỆN THOẠI</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                  <tr>
+                                    <td>ĐỖ VĂN CHÍ</td>
+                                    <td>Ngọc Long, Yên Mỹ, Hưng Yên</td>
+                                    <td>0869257883</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    
+        <div class="nhieu_sp">
+            <div class="data_khach_hang">
+                <div class="table-lv1">
+                    <div id="dssp" style="display: block; ">
+                        <!-- <div class="nhieu_sp">
+                            <div class="data_khach_hang">
+                                <div class="table-lv1">
+                                    <h3>Thông tin sản phẩm</h3>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">TÊN SẢN PHẨM</th>
+                                                <th scope="col">SỐ LƯỢNG</th>
+                                                <th scope="col">GIÁ TIỀN</th>
+                                                <th scope="col">TÔNG TIỀN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ÁO THUN LEVENT SSASADADADA</td>
+                                                <td>2</td>
+                                                <td>500000</td>
+                                                <td>1000000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <a id="nut" href = "don_hang.html" style="color: black; display:none; float: left"><button onclick="da_gui_hang()">Đã gửi hàng</button></a>
+                    <a id="nut1" href = "don_hang.html" style="color: black; display:none; float:left;"><button>Quay Lại</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            <!--
+            -->  
+    <script>
+        var jsdssp = localStorage.getItem('danhsachsp_donhang'); 
+        var dssp1 = JSON.parse(jsdssp);
+        //bước 2 chuyển danh sách đối tượng sp sang đoạn html
+        var HTML = dsspdonhang(dssp1);
+        //bước 3 gán đoạn html vào web
+        var nodeSp = document.getElementById('san_pham_lv1');
+        nodeSp.innerHTML = HTML;
+
+        
+    </script>
+</body>
+</html>

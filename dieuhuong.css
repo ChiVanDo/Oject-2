@@ -1,0 +1,184 @@
+a{
+  text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  li{
+    float: left;
+  }
+  li a {
+    display: block;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+  }
+  .dieu_huong{
+      background-color: rgb(253, 87, 27);
+  }
+  .dieu_huong a{
+    color: rgb(242, 236, 236);
+    margin: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .dieu_huong a:hover{
+    background-color: orange;
+  }
+  .gio_hang{
+    float: right;
+  }
+  .header_top{
+    background-color:rgb(253, 87, 27);
+    overflow: auto; 
+    padding: 30px;
+    width: 100%; 
+    text-align:center; 
+  }
+  .header_top h1{
+    font-size: 40px;
+    color: white ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .header_top p{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .login{
+    font-size: 15px;
+    border-radius: 1px;
+    position: absolute;
+  
+  }
+  #div_body_lv1{
+    
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: rgb(167, 162, 162);
+
+  }
+  .div_body_lv2{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(255, 250, 250);
+  }
+  #quangcao{
+    width: 99.8%;
+    margin-top: 20px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 3px 1px 5px;
+  }
+  #quangcao img{
+    margin: auto;
+    width: 30%;
+    display: flex;
+  }
+
+  #footer{
+    text-align: center;
+    background-color: rgb(22, 10, 6);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1px;
+    color: white;
+    overflow:auto; 
+    margin-top: 10px;
+  }
+
+  #san_pham_lv1{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 2px;
+  }
+  .mot_sp{
+    width: 19.1%; 
+    border: 1px solid rgb(239, 237, 237);
+    float: left;
+    background-color: rgb(252, 252, 252);
+    margin: 5px;
+    box-shadow: 1px 1px 1px rgb(116, 113, 113);
+    border-radius: 3px;
+    padding: 3px;
+  }
+  .mot_sp img{
+    padding:5px;
+    width: 100%;
+    background-color: rgb(240, 236, 236);
+    border-radius: 3px;
+  }
+
+  .mot_sp p{
+    font-size: 15px;
+    font-family:sans-serif
+  }
+  .gia .ic{
+    color: black;
+    float: right
+  }
+  .gia .ic_star{
+    float: left;
+    color: rgb(231, 180, 37);
+  }
+  .ro_hang button{
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 194, 119);
+    border-radius: 3px;
+  }
+  .ro_hang :hover{
+    background-color: rgb(255, 140, 0);
+  }
+  .giamgia{
+    height: 25px;
+    border-radius: 1px;
+    float: right;
+    position: absolute;
+    background-color: rgb(250, 221, 57)
+    
+  }
+  .mot_sp a{
+    padding: 10px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .mot_sp a:hover{
+    color: orange;
+  }
+  .giaban{
+    color: rgb(246, 88, 15) ;
+    float: left;
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .gia .giagoc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    color: rgb(0, 0, 0);
+  }
+
+  .header_top_nguoi_ban{
+    background-color: rgb(246, 88, 15) ;
+    padding: 5px;
+    font-size: 5px;
+    color: aliceblue;
+  }
+ 
+
+  
+ 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tao nhanh doi tuong</title>
+    <script src="topjs.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .them-moi-sp{
+            width: 25%;
+            border: 1px solid gray;
+            margin: auto;
+            padding: 30px;
+
+        }
+
+        .them-moi-sp label,input{
+            width: 80%;
+            display: block;
+        }
+        .them-moi-sp label{
+            margin-top: 20px;
+        }
+        .them-moi-sp input{
+            margin-top: 5px;
+            padding: 10px 20px;
+            border: 1px solid gray;
+            border-radius: 5px ;
+        }
+        .them-moi-sp button{
+            width: 50%;
+            margin-top: 20px;
+            padding: 5;
+            background-color: rgb(249, 159, 70);
+        }
+        .them-moi-sp button:hover{
+            background-color:  rgb(203, 58, 5); ;
+        }
+        .header-lv1 #img1{
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="ro_hang">
+          <button>Thêm vào rỏ hàng</button>
+        </div> 
+    </div>
+    <!--sfsfsfsf-->
+
+    <!--xây dựng chức măng thêm mới sản phẩm--> 
+    <div class="them-moi-sp">
+        <label for="hinhanh">Hinh anh san pham</label>
+        <input type="text" id="hinhanh">
+
+        <label for="ten">Ten sp</label>
+        <input type="text" id="ten">
+
+        <label for="giagoc">Gia goc</label>
+        <input type="number" id="giagoc">
+
+        <label for="giamgia">Giam gia bao nhieu %</label>
+        <input type="number" id="giamgia">
+        
+        <button onclick="clicktaosp()">Tạo Sản Phẩm</button>
+        
+    </div>
+    <div class="header-lv1">
+        <h3 id="kq"></h3>
+        <img id="img1" src="#" alt="">
+    </div>
+
+    <!--Cach làm viết 1 hàm tạo đối tượng-->
+    <script>
+        
+        // tao ra danh sach san phẩm
+        // b1 : láy dssp đã có trong local
+        var dssp = JSON.parse(localStorage.getItem('danhsachsp')); // tao ds mới
+
+        if(dssp==null)
+            dssp = new Array();
+        
+        console.log(dssp);
+
+        // tạo đối tượng sp khi người dùng nhấn nút tạo sản phẩm
+        
+        
+        
+        // json . hoc ve json
+        // b1 tạo đối tượng
+        //var sp2 = taodoituongsp('ao2.png','ao thun4',350000,0.2);
+        
+       // console.info(sp2);
+        // bước 2 tạo json
+        //var json = sp2.tojson(); // tao 1 json từ đối tượng sp2
+        //console.info(json);
+        //luu trữ chuỗi js lên local
+       // localStorage.setItem('sp2',json);
+        //=======================
+        // lấy lại chuỗi js từ local
+       // var json_local = localStorage.getItem('sp2');
+      //  console.log('js ->>> '+json_local);
+        // chuyển js lấy từ local thành đối tượng đầy đủ
+        // gọi hàm doituongdaydu_ham(data) // data= json lấy từ local
+       // var doituongdaydu = doituongdaydu_ham(json_local);
+        //console.log(doituongdaydu);
+
+
+        
+        
+
+    </script>
+    
+</body>
+</html>

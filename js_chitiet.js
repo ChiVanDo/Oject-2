@@ -1,0 +1,31 @@
+function chitet_sp(sanpham){
+    var html = '';
+    html+='<div class="mot_sp">';
+    html+=    '<div class="giamgia">';
+    html+=        '<p style="font-size:10px;">Giảm '+sanpham.giamgia*100+'%</p>';
+    html+=    '</div>';
+    html+=    '<p style="display: none;" id="ma_sp">'+sanpham.masp+'</p>';
+    html+=    '<img src="'+sanpham.hinhanh1+'" alt="">';
+    html+=    '<a onclick = "chi_tiet_sp(\''+sanpham.masp+'\')" href = "#"><p>'+sanpham.ten+'</p></a>';
+    html+=    '<div class="gia">';
+    html+=        '<div class="giaban">';
+    html+=            '<span>'+gia_ban(sanpham)+'đ</span>';
+    html+=        '</div>';
+    html+=        '<div class="giagoc">';
+    html+=            '<del>'+sanpham.giagoc+'đ</del> <!--Thẻ del gạch ngang chữ-->';
+    html+=        '</div>';
+    html+=        '<div class="ic">';
+    html+=            '<i class="fa-solid fa-truck-fast"></i>';
+    html+=            '<i class="fa-regular fa-heart"></i>';
+    html+=        '</div>';
+    html+=        '<div class="ic_star">';
+    html+=            '<i class="fa-solid fa-star"></i>';
+    html+=            '<i class="fa-solid fa-star"></i>';
+    html+=            '<i class="fa-solid fa-star"></i>';
+    html+=            '<i class="fa-solid fa-star"></i>';
+    html+=            '<i class="fa-solid fa-star"></i>';
+    html+=        '</div>';
+    html+=    '</div>';
+    html+='</div>';
+    return html;
+}

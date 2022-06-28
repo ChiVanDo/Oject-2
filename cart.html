@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css_cart.css">
+    <script src="cart_javascript.js"></script>
+    <script src="https://kit.fontawesome.com/9d63442f20.js" crossorigin="anonymous"></script>
+
+    <style>
+        .sum-cart{
+            background-color: rgb(199, 199, 199);
+           
+        }
+        #sum-don{
+            
+            font: 1em sans-serif;
+            font-size: 30px;
+            color: rgb(242, 83, 25);
+            padding: 15px;
+            padding-left: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dieu_huong">
+        <ul>
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="index.html">THÔNG BÁO</a></li>
+            <div class="ic_fb">
+                <li><a href="facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            </div>
+            <div class="ic_ig">
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </div>
+
+            <div class="dat_hang" style="float: right;">
+                <li><a href="dat_hang.html">ĐẶT HÀNG</a></li>
+            </div>
+            
+       </ul>
+    </div>
+    <div class="top_lv1">
+        <p>CHEESE | RỎ HÀNG</p>
+    </div>
+
+    <div class="cot_rohang">
+        <ul>
+            <li><p>Sản Phẩm</p></li>
+            <li><p>Kích Cỡ</p></li>
+            <li><p>Đơn Gía</p></li>
+            <li><p>Số Lượng</p></li>
+            <li><p>Số Tiền</p></li>
+            <li><p>Thao Tác</p></li>   
+       </ul>
+    </div>
+
+    <section id="san_pham_lv1" style="display: block;">
+        <div class="nhieu_sp">
+            <!--
+
+            -->
+        </div>
+    </section>
+
+    <div class="sum-cart">
+        <p id="sum-don">500000</p>
+    </div>
+
+    <div id="them-moi-sp" style="display: none;">
+        <label for="ten">Tên người nhận</label>
+        <input type="text" id="ten">
+
+        <label for="tinh">Tỉnh</label>
+        <input type="text" id="tinh" placeholder="VD: Hà Nội, Hưng Yên...">
+        <label for="huyen">Huyện</label>
+        <input type="text" id="huyen" placeholder="VD: Quận Hai Bà Trưng, Huyện Yên Mỹ...">
+        <label for="xa">Xã</label>
+        <input type="text" id="xa" placeholder="VD: Phường Hoàng Mai, Xã Ngọc Long... ">
+        <label for="nha">Thôn/Số Nhà..</label>
+        <input type="text" id="nha" placeholder="VD: Số nhà 1A/Ngõ 2B, Thôn Ngọc Tỉnh...">
+
+        <label for="sdt_kh">Số điện thoại</label>
+        <input type="number" id="sdt_kh">
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        
+        <button style="padding: 5px;" onclick="clicktaosp_donhang()">GỬI</button>
+    </div>
+
+
+    <div id="tb_ok" style="display: none;">
+        <div class="lv1">
+            <h1>Đặt Hàng Thành Công</h1>
+        </div>
+    </div>
+
+    
+    <script>
+        var jsdssp = localStorage.getItem('dsitemsanpham'); 
+        var dssp1 = JSON.parse(jsdssp);
+        
+        //bước 2 chuyển danh sách đối tượng sp sang đoạn html
+        var HTML = chuyenDanhsachdoituongsanphamthanhHTML(dssp1);
+        //bước 3 gán đoạn html vào web
+        var nodeSp = document.getElementById('san_pham_lv1');
+        nodeSp.innerHTML = HTML;
+
+        //===============
+        var sum=0;
+        for(var i = 0 ;i < dssp1.length ; i++){
+            if(dssp1[i] != null){
+                var s = dssp1[i].gia * dssp1[i].soluong;
+                sum += s;
+            }
+        }
+        document.getElementById('sum-don').innerHTML = 'Tổng số tiền bạn phải trả cho đơn hàng này: '+sum+'VNĐ';
+    </script>
+ 
+
+
+</body>
+</html>
